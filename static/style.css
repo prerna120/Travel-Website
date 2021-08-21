@@ -1,0 +1,467 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ######################  HEADER STYLING ################ */
+.header{
+    height: 95vh;
+    /* border: 8px solid green; */
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../static/img/header-image2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.6rem;
+}
+ul li{
+    list-style: none;
+}
+.container-fluid a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p ,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.14em;
+}
+h1,h2,h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+}
+
+a:hover{
+    color: wheat;
+}
+
+/* ############### utility classes ##################### */
+header nav .contain{
+    padding: 0 10rem;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-white{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555555;
+}
+.text-center{
+    text-align: center;
+}
+.bg-dark{
+    background-color: #263238;
+}
+.button{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    background-color: white;
+    border-radius: 100em;
+    margin: 0.5em 1em;
+    font-weight: 500;
+
+}
+.primary-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    /* background-color: rgb(153, 99, 99); */
+    border: 2px solid teal;
+    color: teal;
+    border-radius: 100em;
+    margin: 0.5em 1em;
+    font-weight: 500;  
+}
+.primary-btn2{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+
+
+/* ##################################################### */
+
+.navbar {
+    padding: 2rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+
+/* ####################### header-content ################ */
+
+.header-content{
+    position: absolute;
+    /* border: 2px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15))
+}
+.header-content h1{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+.header-content a:link,
+.header-content a:visited{
+    color: #e63946;
+}
+.header-content a:hover{
+    background-color: rgb(240, 208, 208);
+}
+
+
+
+/* ##################### SHOWCASE SECTION STYLING ############################## */
+.showcase{
+    background-color: #dddddd;
+    padding: 10rem 0 ;
+}
+.white-bg{
+    margin-bottom: 10rem;
+    background-color: white;
+    box-shadow: .5em .5em 2em 0 #aaa;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+.row .text-box  h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+}
+.row .text-box p{
+    text-align: center;
+    margin: 2.5rem 0 ;
+    line-height: 2.5rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: .5em .5em 2em 0 #aaa;
+}
+.row .text-box a:hover{
+    background-color: #f3e0e0;
+}
+
+
+/* ####################### FEATUREs SECTION STYLING   ##################### */
+
+.features{
+    padding: 10rem 0;
+    /* margin: 10rem 0; */
+}
+
+.box-wrapper{
+    /* border: 2px solid red; */
+    box-shadow: 0em 0em 2em 0 rgba(143, 142, 142, 0.74);
+}
+.box{
+    width: 33.33333333%;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 2em;
+    text-align: center;
+}
+.box1,.box3{
+    background-color: #263238;
+    color: white;
+}
+.box2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: white;
+}
+.box-wrapper .box p{
+    margin: 2rem 0;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ########################## FOOTER SECTION STYLING ######################## */
+.footer{
+    background-color: #263238;
+    color: white;
+    text-align: center;
+}
+.footer i{
+    padding: 2rem;
+    font-size: 3rem;
+}
+.footer p{
+    padding-bottom: 1rem;
+}
+.footer a{
+    color: white;
+}
+
+
+
+/* ################## ABOUT PAGE STYLING ############################ */
+
+.about{
+    padding: 5rem 0;
+}
+.about-heading::after{
+    content: "";
+    display: block;
+    border-bottom: 6px solid #e63946;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* ###########  about wrapper styling ####################### */
+.about-wrapper{
+    margin: 2rem;
+    /* text-align: center; */
+    line-height: 2rem;
+}
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: 700;
+}
+.about-wrapper .left{
+    margin: 2rem 0;
+    padding-left: 18rem;
+}
+.about-wrapper .right{
+    margin: 2rem 0;
+    padding-left: 18rem;
+}
+/* ################################### COUNT STYLING ######################### */
+.count{
+    margin: 3rem 0;
+    color: #e63946;
+}
+.count-item{
+    text-align: center;
+    font-weight: 700;
+}
+.count-item p{
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+/* #################### about banner styling #################### */
+
+.about-banner{
+    /* border: 4px solid red; */
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #f4f4f4;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    box-shadow: 5px 5px 10px #0000003b;
+    margin-top: 2rem;
+}
+.about-banner .banner-line{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.6rem;
+}
+.about-banner-right{
+    text-align: center;
+}
+.banner-btn{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: .3em 1em;
+    letter-spacing: 0.3rem ;
+    color: #f4f4f4;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+
+/* ########################## contact page styling #################################### */
+.contact-form{
+    padding: 5rem;
+    background-color: #f7f7f7;
+}
+.form-wrapper .company-address{
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+} 
+
+ .form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+
+
+/* #########form styling ################# */
+
+.form-wrapper .form{
+    font-size: 1.6rem;
+    background-color: #fff;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content: "";
+    display: block;
+    border-bottom: 6px solid #e63946;
+    width: 100%;
+    margin: .5em 0 ;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 30rem;
+    padding: .5rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ****City page******* */
+.info{
+    background-color: #dddddd;
+    padding-bottom: 4rem;
+}
+.city-heading{
+    font-size: 5.5em;
+    font-weight: 800;
+    padding: 4rem;
+}
+.place-visit{
+    height: 60%;
+    width: 80%;
+    margin: 2rem;
+    box-shadow: .5em .5em 2em 0 #aaa;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.visit-heading{
+    padding: 2rem 0;
+    font-weight: 600;
+}
+.visit-subheading{
+    padding: 1rem;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+} 
+.info a:hover{
+    color: rgb(75, 75, 75);
+    text-decoration: underline;
+}
+.visit{
+    padding: 2rem;
+}
+
+
+/* *********************** Submit Page *************************** */
+
+.submitpagediv{
+    width: 70%; 
+    text-align: center;
+    height: 60%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.submittext{
+    font-size: 1rem;
+    padding: 7% 5%;
+
+
+}
+.submitpg{
+    width: 100%;
+    background-color : #dddddd;
+    height: 80%;
+}
+
+.submit-pg-btn{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+
+}
+.submit-pg-btn :hover{
+    color: rgb(75, 75, 75);
+    text-decoration: underline;
+}
