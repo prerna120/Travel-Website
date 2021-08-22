@@ -3,7 +3,7 @@ const path=require('path');
 const fs=require('fs');
 const http = require('http')
 const host=process.env.HOST || '127.0.0.1'
-const port=process.env.PORT || 80;
+const port=process.env.PORT || 1167;
 const app=express();
 const server = http.createServer(app)
 
@@ -65,7 +65,8 @@ app.post('/contact',(req,res)=>{
 });
 
 
-server.listen(port, host);
-server.on('listening', function() {
-    console.log('Express server started on port %s at %s', server.address().port, server.address().address);
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+server.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
 });
