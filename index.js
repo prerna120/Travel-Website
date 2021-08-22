@@ -1,8 +1,11 @@
 const express=require('express');
 const path=require('path');
 const fs=require('fs');
-const port=80;
+const http = require('http')
+const host=process.env.HOST || '127.0.0.1'
+const port=process.env.PORT || 80;
 const app=express();
+const server = http.createServer(app)
 
 app.use('/static',express.static('static'));
 
@@ -62,6 +65,7 @@ app.post('/contact',(req,res)=>{
 });
 
 
-app.listen(port,()=>{
-    console.log(`server running on port ${port}`);
-})
+server.listen(port, host);
+server.on('listening', function() {
+    console.log('Express server started on port %s at %s', server.address().port, server.address().address);
+});
